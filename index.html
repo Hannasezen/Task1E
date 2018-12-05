@@ -5,19 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Anna Sezen">
 	<meta name="description" lang="en" content="Web-site for searchig partners for spending hollidays">
-	<meta name="description" lang="ru" content="Ресурс для поиска партнеров для проведения совместного отпуска">
 	<title>Dreamshare.com</title>
 	<link rel="stylesheet" href="css/bem.css">
 </head>
 <body>
 	<div class="wrapper"><!--root element-->
-		<section class="promo-background"> <!--background image for header and promo-->
+		<div class="promo-background"> <!--background image for header and promo-->
 			<div class="container" role="banner">
 				<header class="header flex">
 					<div class="header__logo">
 						<a href="#">Dreamshare</a>
 					</div>
-					<ul class="auth" role="log"><!--authorization block-->
+					<ul class="auth"><!--authorization block-->
 						<li class="auth__item"><a href="#" class="auth__btn btn">Войти</a></li>
 						<li class="auth__item"><a href="#" class="auth__btn btn btn-color-white">Присоединиться</a></li>
 					</ul>
@@ -28,7 +27,7 @@
 					<button class="promo-info__btn btn btn-color-red">Найти партнеров для поездки</button>
 				</section>
 			</div>
-		</section>
+		</div>
 		<section class="works-cover">
 			<div class="container">
 				<h2 class="works__title title">Как Dreamshare работает?</h2>
@@ -123,11 +122,11 @@
 			<div class="container">
 				<div class="create">
 					<h2 class="create__title title">Начать планировать свой отпуск</h2>
-					<div class="create__text" role="text">
+					<div class="create__text">
 						Привет! А какой отпуск интересует тебя?
 					</div>
 					<form action="send" class="form"><!--send form block-->
-						<input type="text" role="search" class="form__text" value="Введите ваши интересы...">
+						<input type="text" role="search" class="form__text" placeholder="Введите ваши интересы...">
 						<button class="form__btn btn btn-color-red">Найти партнеров</button>
 					</form>
 				</div>
