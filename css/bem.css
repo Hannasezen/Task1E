@@ -65,13 +65,35 @@ input {
 	justify-content: space-between;
 }
 
+.logo {
+	font-family: 'Montserrat';
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+.logo:hover {
+	transform: scale(1.2);
+}
+
+.logo__link-color-red {
+	color: #FF4E50;
+}
+
 .btn {
+	display: inline-block;
     font-family: 'MontserratBold';
     font-size: 14px;    
 	padding: 10px 20px;
 	border-radius: 40px;
 	cursor: pointer;
 	color: #fff;
+	transition: all 0.4s ease;
+}
+
+.btn:hover {
+	transform: scale(1.2);
 }
 
 .btn-color-red {
@@ -115,10 +137,7 @@ input {
 }
 
 .header__logo {
-	font-family: 'Montserrat';
-	text-transform: uppercase;
-	font-size: 20px;
-	font-weight: bold;
+
 }
 
 .auth__item {
@@ -155,11 +174,11 @@ input {
 
 /* how it works section */
 
-.works-cover {
+.instruction-cover {
 	padding-top: 40px;
 }
 
-.work {	
+.step {	
 	height: 400px;
 	border-radius: 5px;
 	display: flex;
@@ -168,23 +187,23 @@ input {
 	background-size: cover;
 }
 
-.works__step {
+.instruction__step {
 	width: 32%;
 }
 
-.works__step1 {
+.instruction__step1 {
 	background: url(../img/step1.png) no-repeat;
 }
 
-.works__step2 {
+.instruction__step2 {
 	background: url(../img/step2.png) no-repeat;
 }
 
-.works__step3 {
+.instruction__step3 {
 	background: url(../img/step3.png) no-repeat;
 }
 
-.work__content {
+.step__content {
 	text-align: left;
 	max-width: 250px;
 	margin-left: 25px;
@@ -192,7 +211,7 @@ input {
 	line-height: 14px;
 }
 
-.work__btn {
+.step__btn {
 	font-family: 'Montserrat';
 	font-size: 10px;
 	letter-spacing: 2px;
@@ -201,22 +220,34 @@ input {
     text-transform: uppercase;
 }
 
-.work__title {
+.step__title {
 	color: #fff;
     line-height: 14px;
     font-family: 'MontserratBold', Helvetica, Arial, sans-serif;
 	line-height: 1em;
 }
 
-.work__text {
+.step__text {
     margin: 14px 0;
 }
 
 /* Partners section */
 
+.partners {
+	padding-bottom: 50px;
+}
+
 .partner {
 	width: 23%;
 	text-align: center;
+	padding-top: 20px;
+	transition: all 0.4s ease;
+}
+
+.partner:hover {
+	border-radius: 10px;
+	box-shadow: #666 5px 5px 10px;
+	transform: scale(1.1);
 }
 
 .partner__avatar {
@@ -238,22 +269,6 @@ input {
 	line-height: 14px;
 	color: #666;
 	margin-bottom: 36px;
-}
-
-.partner1 {
-    background: url(../img/avatar1.png) no-repeat;
-}
-
-.partner2 {
-    background: url(../img/avatar2.png) no-repeat;
-}
-
-.partner3 {
-    background: url(../img/avatar3.png) no-repeat;
-}
-
-.partner4 {
-    background: url(../img/avatar4.png) no-repeat;
 }
 
 /* Ideas section */
@@ -379,9 +394,8 @@ input {
 
 .footer__logo {
 	font-size: 16px;
-	line-height: 20px;
+    font-weight: normal;
     color: #FF4E50;
-    text-transform: uppercase;
 }
 
 .nav {
@@ -402,6 +416,11 @@ input {
 	color: #999;
 	text-transform: capitalize;
 	margin-bottom: 15px;
+	transition: all 0.2s ease;
+}
+
+.nav__link:hover {
+	color: red;
 }
 
 .footer__title {
@@ -420,3 +439,8 @@ input {
 	margin-top: 10px;
 	max-width: 110px;
 }
+
+/* 1. Разобраться со строкой 130 инпут тайп текст.
+	2. Расставить роли тегам
+	3. Заменить блоки с фото на ссылки
+	4. Проверить все стили на БЭМ в файле стилей - стили позиционирования отдельно от оформления */
