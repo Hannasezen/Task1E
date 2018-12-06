@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Anna Sezen">
-	<meta name="description" lang="en" content="Web-site for searchig partners for spending hollidays">
+	<meta name="description" lang="en" content="Web-site for search partners for spending holidays">
 	<title>Dreamshare.com</title>
 	<link rel="stylesheet" href="css/bem.css">
 </head>
 <body>
-	<di class="wrapper"><!--root element-->
+	<div class="wrapper"><!--root element-->
 		<div class="promo-background"> <!--background image for header and promo-->
 			<div class="container" role="banner">
 				<header class="header flex">
@@ -24,7 +24,7 @@
 				<section class="promo-info"><!--info about site-->
 					<h1 class="promo-info__title upper">ПОДЕЛИСЬ СВОИМ ИДЕАЛЬНЫМ ОТПУСКОМ</h1>
 					<div class="promo-info__text">И воплоти свои мечты в реальность с новыми друзьями</div>
-					<a href="#partners" class="promo-info__btn btn btn-color-red">Найти партнеров для поездки</a>
+					<a href="#partners" class="promo-info__btn btn btn-color-red" role="button">Найти партнеров для поездки</a>
 				</section>
 			</div>
 		</div>
@@ -89,7 +89,7 @@
 						<div class="partner__about">Фанат Звездных Войн. У меня врожденный энтузиазм к созданию новых вещей.</div>
 					</li>
 				</ul>
-				<a href="./partners/parnter.html" class="btn btn-color-redWhite">Другие партнеры</a>
+				<a href="./partners/parnter.html" class="btn btn-color-redWhite" role="button">Другие партнеры</a>
 			</div>
 		</section>
 		<section class="ideas_cover">
@@ -127,9 +127,9 @@
 					<div class="create__text">
 						Привет! А какой отпуск интересует тебя?
 					</div>
-					<form action="send" class="form"><!--send form block-->
-						<input type="text" role="search" class="form__text" placeholder="Введите ваши интересы...">
-						<a href="#partners" class="form__btn btn btn-color-red">Найти партнеров</a>
+					<form action="send" class="form" role="search"><!--send form block-->
+						<input type="text" class="form__text" placeholder="Введите ваши интересы...">
+						<a href="#partners" class="form__btn btn btn-color-red" role="button">Найти партнеров</a>
 					</form>
 				</div>
 			</div>
@@ -159,6 +159,6 @@
 				</div>
 			</div>
 		</footer>
-	</di>	
+	</div>	
 </body>
 </html>
