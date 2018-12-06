@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/bem.css">
 </head>
 <body>
-	<div class="wrapper"><!--root element-->
+	<di class="wrapper"><!--root element-->
 		<div class="promo-background"> <!--background image for header and promo-->
 			<div class="container" role="banner">
 				<header class="header flex">
@@ -18,7 +18,7 @@
 					</div>
 					<ul class="auth"><!--authorization block-->
 						<li class="auth__item"><a href="#" class="auth__btn btn">Войти</a></li>
-						<li class="auth__item"><a href="#" class="auth__btn btn btn-color-white">Присоединиться</a></li>
+						<li class="auth__item"><a href="./registration/registration.html" class="auth__btn btn btn-color-white">Присоединиться</a></li>
 					</ul>
 				</header>
 				<section class="promo-info"><!--info about site-->
@@ -34,21 +34,21 @@
 				<div class="instruction flex"><!--How it works block-->
 					<div class="step instruction__step instruction__step1">
 						<div class="step__content">
-							<a href="#" class="step__btn btn btn-color-red">Шаг 1</a>
+							<a href="./registration/registration.html" class="step__btn btn btn-color-red">Шаг 1</a>
 							<h3 class="step__title">Регистрация</h3>
 							<div class="step__text">Зарегистрируйся и ты сможешь найти друзей, которые разделяют твою мечту идеального отпуска</div>
 						</div>
 					</div>
 					<div class="step instruction__step instruction__step2">
 						<div class="step__content">
-							<a href="#" class="step__btn btn btn-color-red">Шаг 2</a>
+							<a href="./partners/parnter.html" class="step__btn btn btn-color-red">Шаг 2</a>
 							<h3 class="step__title">Планирование</h3>
 							<div class="step__text">Спланируйте все до мельчайших подробностей. Карта, расписание, билеты и все необходимое для путешествия...</div>
 						</div>					
 					</div>
 					<div class="step instruction__step instruction__step3">
 						<div class="step__content">
-							<a href="#" class="step__btn btn btn-color-red">Шаг 3</a>
+							<a href="./gallery/gallery.html" class="step__btn btn btn-color-red">Шаг 3</a>
 							<h3 class="step__title">Самое приятное</h3>
 							<div class="step__text">...и наслаждайтесь отличным отдыхом в замечательной компании друзей!</div>
 						</div>
@@ -56,73 +56,67 @@
 				</div>
 			</div>
 		</section>
-		<section class="partners_cover">
+		<section class="partners_cover" id="partners">
 			<div class="container">
 				<h2 class="title">Знакомьтесь с нашими партнерами...</h2>
-				<ul class="partners flex" id="partners"><!--partners block-->
+				<ul class="partners flex"><!--partners block-->
 					<li class="partner">
-						<a href="#">
+						<a href="./partners/parnter.html">
 							<img class="partner__avatar partner1" src="img/avatar1.png" alt="Partner">
 						</a>
 						<div class="partner__name">Иван</div>
 						<div class="partner__about">Я из Киеве. Обожаю играть в теннис и слушать музыку громко.</div>
 					</li>
 					<li class="partner">
-						<a href="#">
+						<a href="./partners/parnter.html">
 							<img class="partner__avatar partner1" src="img/avatar2.png" alt="Partner">
 						</a>
 						<div class="partner__name">Маша</div>
 						<div class="partner__about">В данный момент живу во Львове. Любитель искусства, языков и путешествий.</div>
 					</li>
 					<li class="partner">
-						<a href="#">
+						<a href="./partners/parnter.html">
 							<img class="partner__avatar partner1" src="img/avatar3.png" alt="Partner">
 						</a>
 						<div class="partner__name">Диана</div>
 						<div class="partner__about">Живу в Афинах, Греция. Я люлбю классическую одежду, релакс-музыку и зеленый чай.</div>
 					</li>
 					<li class="partner">
-						<a href="#">
+						<a href="./partners/parnter.html">
 							<img class="partner__avatar partner1" src="img/avatar4.png" alt="Partner">
 						</a>
 						<div class="partner__name">Кристофер</div>
 						<div class="partner__about">Фанат Звездных Войн. У меня врожденный энтузиазм к созданию новых вещей.</div>
 					</li>
 				</ul>
-				<a href="#" class="btn btn-color-redWhite">Другие партнеры</a>
+				<a href="./partners/parnter.html" class="btn btn-color-redWhite">Другие партнеры</a>
 			</div>
 		</section>
 		<section class="ideas_cover">
 			<div class="container">
 				<h2 class="title">Знакомьтесь с лучшими идеями проведения отпуска</h2>
-				<div class="ideas flex"><!--ideas block-->
-					<div class="idea idea1">
-						<div class="idea__title">
-							Спорт и Мероприятия
-						</div>
-					</div>
-					<div class="idea idea2">
-						<div class="idea__title">
-							Wellness и Здоровье
-						</div>
-					</div>
-					<div class="idea idea3">
-						<div class="idea__title">
-							Экстремальный спорт и Экспедиции
-						</div>
-					</div>
-					<div class="idea idea4">
+				<div  class="ideas flex"><!--ideas block-->
+					<a href="./gallery/gallery.html" class="idea idea1">
+						<div class="idea__title">Спорт и Мероприятия</div>
+					</a>
+					<a href="./gallery/gallery.html" class="idea idea2">
+						<div class="idea__title">Wellness и Здоровье</div>
+					</a>
+					<a href="./gallery/gallery.html" class="idea idea3">
+						<div class="idea__title">Экстремальный спорт и Экспедиции</div>
+					</a>
+					<a href="./gallery/gallery.html" class="idea idea4">
 						<div class="idea__title">Азартные игры</div>
-					</div>
-					<div class="idea idea5">
+					</a>
+					<a href="./gallery/gallery.html" class="idea idea5">
 						<div class="idea__title">Культура и Образование</div>
-					</div>
-					<div class="idea idea6">
+					</a>
+					<a href="./gallery/gallery.html" class="idea idea6">
 						<div class="idea__title">Наслаждение и Расслабление</div>
-					</div>
-					<div class="idea idea7">
+					</a>
+					<a href="./gallery/gallery.html" class="idea idea7">
 						<div class="idea__title">Пешие прогулки</div>
-					</div>
+					</a>
 				</div>
 			</div>
 		</section>
@@ -135,7 +129,7 @@
 					</div>
 					<form action="send" class="form"><!--send form block-->
 						<input type="text" role="search" class="form__text" placeholder="Введите ваши интересы...">
-						<a href="#" class="form__btn btn btn-color-red">Найти партнеров</a>
+						<a href="#partners" class="form__btn btn btn-color-red">Найти партнеров</a>
 					</form>
 				</div>
 			</div>
@@ -157,7 +151,7 @@
 					</ul>
 				</nav>
 				<div class="footer__partners">
-					<h3><a href="#" class="footer__title">Партнеры</a></h3>
+					<h3><a href="#partners" class="footer__title">Партнеры</a></h3>
 				</div>
 				<div class="design upper"><!--copyright-->
 					дизайн от
@@ -165,6 +159,6 @@
 				</div>
 			</div>
 		</footer>
-	</div>	
+	</di>	
 </body>
 </html>
