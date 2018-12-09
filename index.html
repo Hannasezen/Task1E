@@ -22,7 +22,7 @@
 					</ul>
 				</header>
 				<section class="promo-info"><!--info about site-->
-					<h1 class="promo-info__title upper">ПОДЕЛИСЬ СВОИМ ИДЕАЛЬНЫМ ОТПУСКОМ</h1>
+					<h1 class="promo-info__title upper">ПОДЕЛИСЬ СВОИМ ИДЕАЛЬНЫМ ОТПУСКОМ С Dreamshare</h1>
 					<div class="promo-info__text">И воплоти свои мечты в реальность с новыми друзьями</div>
 					<a href="#partners" class="promo-info__btn btn btn-color-red" role="button">Найти партнеров для поездки</a>
 				</section>
@@ -128,8 +128,20 @@
 						Привет! А какой отпуск интересует тебя?
 					</div>
 					<form action="send" class="form" role="search"><!--send form block-->
-						<input type="text" class="form__text" placeholder="Введите ваши интересы...">
-						<a href="#partners" class="form__btn btn btn-color-red" role="button">Найти партнеров</a>
+						<input list="interests" class="form__text" placeholder="Введите ваши интересы...">
+						<datalist id="interests">
+							<option value="sport"></option>
+							<option value="architecture"></option>
+							<option value="music"></option>
+							<option value="extreme"></option>
+							<option value="food"></option>
+							<option value="religion"></option>
+							<option value="relax"></option>
+							<option value="books"></option>
+							<option value="nature"></option>
+							<option value="people"></option>
+						</datalist>
+						<a href="/partners/parnter.html" class="form__btn btn btn-color-red" role="button">Найти партнеров</a>
 					</form>
 				</div>
 			</div>
@@ -151,7 +163,7 @@
 					</ul>
 				</nav>
 				<div class="footer__partners">
-					<h3><a href="#partners" class="footer__title">Партнеры</a></h3>
+					<h3><a href="/partners/parnters.html" class="footer__title">Партнеры</a></h3>
 				</div>
 				<div class="design upper"><!--copyright-->
 					дизайн от
