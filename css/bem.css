@@ -2,13 +2,9 @@
 
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
 img, ul, li, form, input, footer, header, nav, section {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-footer, header, nav , section {
-	display: block;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img {
@@ -16,56 +12,57 @@ img {
 }
 
 ul, ol {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 a,
 button,
 input {
-    outline: none;
+  outline: none;
 }
 
 /* fonts styles */
 
 @font-face {
-    font-family: 'MontserratRegular';
-    src:  url('../fonts/Montserrat/Montserrat-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'MontserratBold';
-    src:  url('../fonts/Montserrat/Montserrat-Bold.ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'RobotoLight';
-    src:  url('../fonts/Roboto/Roboto-Light.ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
+	font-family: 'MontserratRegular';
+	src:  url('../fonts/Montserrat/Montserrat-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MontserratBold';
+	src:  url('../fonts/Montserrat/Montserrat-Bold.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'RobotoLight';
+	src:  url('../fonts/Roboto/Roboto-Light.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
 
 /* global styles for blocks */
 
 .wrapper {
-    text-align: center;
+  text-align: center;
 	min-width: 320px;
-    color: #fff;
-    font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
 }
 
 .container {
+	width: 90%;
 	max-width: 940px;
-    margin: 0 auto;
-    padding: 50px 0;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
 .flex {
@@ -88,9 +85,9 @@ input {
 	transition: all 0.3s ease;
 }
 
-.logo__link:hover {
+/*.logo__link:hover {
 	transform: scale(1.2);
-}
+}*/
 
 .logo__link-color-red {
 	color: #FF4E50;
@@ -98,8 +95,8 @@ input {
 
 .btn {
 	display: inline-block;
-    font-family: 'MontserratBold';
-    font-size: 14px;    
+  font-family: 'MontserratBold';
+  font-size: 14px;    
 	padding: 10px 20px;
 	border-radius: 40px;
 	cursor: pointer;
@@ -107,9 +104,9 @@ input {
 	transition: all 0.4s ease;
 }
 
-.btn:hover {
+/*.btn:hover {
 	transform: scale(1.2);
-}
+}*/
 
 .btn-color-red {
 	background: #FF4E50;
@@ -128,10 +125,10 @@ input {
 }
 
 .title {
-    font-family: 'MontserratBold', Helvetica, Arial, sans-serif;
-    color: #444;
-    font-size: 22px;
-    margin-bottom: 40px;
+  font-family: 'MontserratBold', Helvetica, Arial, sans-serif;
+  color: #444;
+  font-size: 22px;
+  margin-bottom: 40px;
 }
 
 /* styles for section promo */
@@ -148,17 +145,16 @@ input {
 /* styles for header block */
 
 .header {
-    margin-bottom: 160px;
+	max-width: 940px;
+  margin-bottom: 160px;
 }
 
 .auth__item {
 	display: inline-block;
-	margin-right: 19px;
-	vertical-align: center;
 }
 
 .auth__btn {
-    font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
+  font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
 }
 
 /* styles for promo-info block */
@@ -167,12 +163,12 @@ input {
 	max-width: 80%;
 	margin: 0 auto;
 	font-size: 24px;
-    line-height: 24px;
-    text-align: center;
+  line-height: 24px;
+  text-align: center;
 }
 
 .promo-info__title {
-    font-family: 'MontserratBold', Helvetica, Arial, sans-serif;
+  font-family: 'MontserratBold', Helvetica, Arial, sans-serif;
 	font-size: 52px;
 	color: #fff;
 	margin-bottom: 35px;
@@ -190,7 +186,7 @@ input {
 }
 
 .step {	
-	height: 400px;
+	padding-top: 14rem;
 	border-radius: 5px;
 	display: flex;
 	flex-flow: column;
@@ -227,19 +223,19 @@ input {
 	font-size: 10px;
 	letter-spacing: 2px;
 	padding: 6px 14px;
-    margin-bottom: 34px;
-    text-transform: uppercase;
+  margin-bottom: 34px;
+  text-transform: uppercase;
 }
 
 .step__title {
 	color: #fff;
-    line-height: 14px;
-    font-family: 'MontserratBold', Helvetica, Arial, sans-serif;
+  line-height: 14px;
+  font-family: 'MontserratBold', Helvetica, Arial, sans-serif;
 	line-height: 1em;
 }
 
 .step__text {
-    margin: 14px 0;
+  margin: 14px 0;
 }
 
 /* Partners section */
@@ -250,16 +246,17 @@ input {
 
 .partner {
 	width: 23%;
+	min-width: 180px;
 	text-align: center;
 	padding-top: 20px;
 	transition: all 0.4s ease;
 }
 
-.partner:hover {
+/*.partner:hover {
 	border-radius: 10px;
 	box-shadow: #666 5px 5px 10px;
 	transform: scale(1.1);
-}
+}*/
 
 .partner__avatar {
 	width: 120px;
@@ -285,8 +282,11 @@ input {
 /* Ideas section */
 
 .ideas {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-row-gap: 1em;
+	grid-column-gap: 1em;
 	color: #fff;
-	flex-wrap: wrap;
 	max-width: 940px;
 }
 
@@ -295,36 +295,36 @@ input {
 	transition: all 0.5s ease;
 }
 
-.idea:hover {
+/*.idea:hover {
 	transform: scale(1.05);
-}
+}*/
 
 .idea1 {
-	background: url(../img/idea1.png) no-repeat;
+	background: url(../img/idea1.png);
 }
 
 .idea2 {
-	background: url(../img/idea2.png) no-repeat;
+	background: url(../img/idea2.png);
 }
 
 .idea3 {
-	background: url(../img/idea3.png)  no-repeat;
+	background: url(../img/idea3.png);
 }
 
 .idea4 {
-	background: url(../img/idea4.png) no-repeat;
+	background: url(../img/idea4.png);
 }
 
 .idea5 {
-	background: url(../img/idea5.png) no-repeat;
+	background: url(../img/idea5.png);
 }
 
 .idea6 {
-	background: url(../img/idea6.png) no-repeat;
+	background: url(../img/idea6.png);
 }
 
 .idea7 {
-	background: url(../img/idea7.png) no-repeat;
+	background: url(../img/idea7.png);
 }
 
 .idea1,
@@ -334,31 +334,24 @@ input {
 .idea5,
 .idea6,
 .idea7 {
+	background-size: cover;
+	background-color: rgb(228, 218, 218);
+	background-repeat: no-repeat;
 	border-radius: 4px;
 }
 
-.idea1,
-.idea2,
-.idea3,
-.idea4,
-.idea7 {
-	height: 310px;
-	max-width: 300px;
-	flex-grow: 1;
-	flex-basis: 31.5%;
-	margin-bottom: 20px;
+.idea5 {
+	grid-column-start: 2;
+	grid-column-end: 4;
 }
 
-.idea5,
 .idea6 {
-	height: 310px;
-	max-width: 620px;
-	flex-grow: 2;
-	flex-basis: 60%;
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 
 .idea__title {
-	font-family: 'Montserrat';
+	font-family: 'MontserratBold', Arial, sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	line-height: normal;
@@ -377,7 +370,7 @@ input {
 /* Create  form section */
 
 .create-cover {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .create__text {
@@ -394,7 +387,6 @@ input {
 }
 
 .form__text {
-	display: block;
 	width: 62%;
 	border: 1px solid #D4D4D4;
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
@@ -414,8 +406,8 @@ input {
 
 .footer__logo {
 	font-size: 16px;
-    font-weight: normal;
-    color: #FF4E50;
+  font-weight: normal;
+  color: #FF4E50;
 }
 
 .nav {
@@ -423,14 +415,14 @@ input {
 }
 
 .nav__title {
-    font-family: 'MontserratBold', Helvetica, Arial, sans-serif;
-    font-size: 14px;
+  font-family: 'MontserratBold', Helvetica, Arial, sans-serif;
+  font-size: 14px;
 	margin-bottom: 20px;
 	color: #444;
 }
 
 .nav__link {
-    font-family: 'RobotoLight';
+  font-family: 'RobotoLight';
 	font-size: 14px;
 	line-height: 26px;
 	color: #999;
@@ -439,18 +431,18 @@ input {
 	transition: all 0.2s ease;
 }
 
-.nav__link:hover {
+/*.nav__link:hover {
 	color: red;
-}
+}*/
 
 .footer__title {
-    font-family: 'MontserratBold', Helvetica, Arial, sans-serif;
-    color: #444;
+  font-family: 'MontserratBold', Helvetica, Arial, sans-serif;
+  color: #444;
 }
 
-.footer__title:hover {
+/*.footer__title:hover {
 	color: #FF4E50;
-}
+}*/
 
 .design {
 	font-size: 10px;
@@ -464,7 +456,274 @@ input {
 	max-width: 110px;
 }
 
-/* 1. Разобраться со строкой 130 инпут тайп текст.
-	2. Расставить роли тегам
-	3. Заменить блоки с фото на ссылки
-	4. Проверить все стили на БЭМ в файле стилей - стили позиционирования отдельно от оформления */
+@media screen and (max-width: 768px) {
+
+	.promo-background {
+		height: 100%;
+	}
+
+	.header {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.container {
+		width: 90%;
+	}
+
+	.promo-info__title {
+		font-size: 2rem;
+	}
+
+	.step {
+		padding-top: 6rem;
+    padding-bottom: 1rem;
+	}
+
+	.partner {
+		width: 50%;
+		margin-bottom: 1rem;
+	}
+
+	.idea__title {
+		height: 100%;
+		padding-top: 20%;
+		padding-bottom: 20%;
+		font-size: 1rem;
+	}
+
+	.form {
+		flex-flow: column;
+	}
+
+	.form__text {
+		width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+	}
+
+	.form__btn {
+		width: 30%;
+    margin: auto;
+	}
+}
+
+@media  only screen and (max-width: 500px)
+
+/*@media  only screen and (max-width: 320px) {
+
+	.flex {
+		flex-flow: column;
+	}
+
+	h2 {
+		margin-bottom: 20px;
+	}
+
+	.promo-background {
+		height: auto;
+	}
+
+	.promo-info {
+		max-width: 88%;
+		padding-top: 20px;
+		margin-bottom: 0;
+	}
+
+	.header {
+		padding: 0;
+    flex-flow: column;
+    height: 10vh;
+    margin-bottom: 1rem;
+	}
+
+	.promo-info__title {
+		font-size: 20px;
+	}
+
+	.promo-info__text {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.works_cover {
+		padding-top: 20px;
+		padding-bottom: 0;
+	}
+
+	.work {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 300px;
+		max-height: 240px;
+		margin-bottom: 10px;
+		background-size: cover;
+	}
+
+	.work1 {
+		background: url(../img/step1_mobile.png) no-repeat;
+	}
+
+	.work2 {
+		background: url(../img/step2_mobile.png) no-repeat;
+	}
+
+	.work3 {
+		background: url(../img/step3_mobile.png) no-repeat;
+	}
+
+	.work_content {
+		margin-left: 20px;
+	}
+
+	.work_content h3 {
+		margin-bottom: 30px;
+	}
+
+	.work_content p {
+		margin-top: 0;
+	}
+
+	.partners {
+		width: 100%;
+		margin-bottom: 37px;
+	}
+
+	.partners_cover {
+		padding-bottom: 0;
+	}
+
+	li:last-child {
+		margin-bottom: 0;
+		color: red;
+	}
+
+	.partner {
+		margin: 0 auto;
+		width: 100%;
+		margin-bottom: 17px;
+	}
+
+	.ideas_cover {
+		padding-top: 35px;
+		padding-bottom: 0;
+	}
+
+	.ideas {
+		align-items: center;
+	}
+
+	.idea1 {
+		background: url(../img/idea1_mobile.png) no-repeat;
+	}
+
+	.idea2 {
+		background: url(../img/idea2_mobile.png) no-repeat;
+	}
+
+	.idea3 {
+		background: url(../img/idea3_mobile.png)  no-repeat;
+	}
+
+	.idea4 {
+		background: url(../img/idea4_mobile.png) no-repeat;
+	}
+
+	.idea5 {
+		background: url(../img/idea5_mobile.png) no-repeat;
+	}
+
+	.idea6 {
+		background: url(../img/idea6_mobile.png) no-repeat;
+	}
+
+	.idea7 {
+		background: url(../img/idea7_mobile.png) no-repeat;
+	}
+
+
+	.ideas div {
+		max-width: 300px;
+		width: 100%;
+		max-height: 120px;
+	}
+
+	.ideas .title {
+		width: 100%;
+	}
+
+	.idea5,
+	.idea6 {
+		margin-bottom: 20px;
+	}
+
+	.create_cover {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.create h2 {
+		max-width: 70%;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+
+	.create .text {
+		margin-bottom: 15px;
+	}
+
+	.form {
+		flex-flow: column;
+		justify-content: center;
+		max-width: 280px;
+	}
+
+	.form input,
+	.form button {
+		height: 40px;
+		width: 100%;
+	}
+
+	.form input {
+		margin-bottom: 10px;
+	}
+
+	.footer {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.footer .logo {
+		margin-bottom: 15px;
+	}
+
+	.footer .nav {
+		text-align: center;
+	}
+
+	.footer .nav {
+		max-width: 200px;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+
+	.nav_links li {
+		display: inline-block;
+	}
+
+	.partners_link {
+		margin-bottom: 15px;
+	}
+
+	.footer .design {
+		text-align: center; 
+	}
+
+	.design_logo {
+		margin: 0 auto;
+	}
+
+
+}	
+
+/* Проверить все стили на БЭМ в файле стилей - стили позиционирования отдельно от оформления */
