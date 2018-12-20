@@ -1,10 +1,14 @@
 /* reset styles */
 
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
-img, ul, li, form, input, footer, header, nav, section {
+img, ul, li, form, input, footer, header, nav, section, a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
 }
 
 img {
@@ -83,11 +87,12 @@ input {
 .logo__link {
 	display: inline-block;
 	transition: all 0.3s ease;
+	line-height: 36px;
 }
 
-/*.logo__link:hover {
+.logo__link:hover {
 	transform: scale(1.2);
-}*/
+}
 
 .logo__link-color-red {
 	color: #FF4E50;
@@ -96,17 +101,18 @@ input {
 .btn {
 	display: inline-block;
   font-family: 'MontserratBold';
-  font-size: 14px;    
+  font-size: 0.8rem;    
 	padding: 10px 20px;
-	border-radius: 40px;
+	border-radius: 2.5rem;
 	cursor: pointer;
 	color: #fff;
 	transition: all 0.4s ease;
 }
 
-/*.btn:hover {
-	transform: scale(1.2);
-}*/
+.btn:hover {
+	transform: scale(1.1);
+	box-shadow: 2px 2px 10px rgb(198, 198, 198), -2px -2px 10px rgb(198, 198, 198);
+}
 
 .btn-color-red {
 	background: #FF4E50;
@@ -115,7 +121,7 @@ input {
 
 .btn-color-white {
 	border: 2px solid #FFFFFF;
-	padding: 7px 17px;
+	padding: 0.5rem 1rem;
 }
 
 .btn-color-redWhite {
@@ -127,8 +133,8 @@ input {
 .title {
   font-family: 'MontserratBold', Helvetica, Arial, sans-serif;
   color: #444;
-  font-size: 22px;
-  margin-bottom: 40px;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 /* styles for section promo */
@@ -146,7 +152,7 @@ input {
 
 .header {
 	max-width: 940px;
-  margin-bottom: 160px;
+  margin-bottom: 22vh;
 }
 
 .auth__item {
@@ -247,16 +253,25 @@ input {
 .partner {
 	width: 23%;
 	min-width: 180px;
-	text-align: center;
+	margin: 0 auto;
 	padding-top: 20px;
+	text-align: center;
 	transition: all 0.4s ease;
 }
 
-/*.partner:hover {
+.partner a {
+	display: block;
+	width: 120px;
+	margin: auto;
+}
+
+.partner:hover {
+	cursor: pointer;
+	background-color: rgba(255, 78, 80, 0.2);
 	border-radius: 10px;
-	box-shadow: #666 5px 5px 10px;
-	transform: scale(1.1);
-}*/
+	box-shadow: #999 2px 2px 10px,
+	-2px -2px 10px rgb(198, 198, 198);
+}
 
 .partner__avatar {
 	width: 120px;
@@ -295,9 +310,9 @@ input {
 	transition: all 0.5s ease;
 }
 
-/*.idea:hover {
+.idea:hover {
 	transform: scale(1.05);
-}*/
+}
 
 .idea1 {
 	background: url(../img/idea1.png);
@@ -431,18 +446,18 @@ input {
 	transition: all 0.2s ease;
 }
 
-/*.nav__link:hover {
+.nav__link:hover {
 	color: red;
-}*/
+}
 
 .footer__title {
   font-family: 'MontserratBold', Helvetica, Arial, sans-serif;
   color: #444;
 }
 
-/*.footer__title:hover {
+.footer__title:hover {
 	color: #FF4E50;
-}*/
+}
 
 .design {
 	font-size: 10px;
@@ -465,10 +480,6 @@ input {
 	.header {
 		margin-left: auto;
 		margin-right: auto;
-	}
-
-	.container {
-		width: 90%;
 	}
 
 	.promo-info__title {
@@ -497,233 +508,139 @@ input {
 	}
 
 	.form__text {
-		width: 100%;
+		width: 90%;
+		margin: auto;
     padding: 1rem;
     margin-bottom: 1rem;
 	}
 
 	.form__btn {
-		width: 30%;
     margin: auto;
 	}
 }
 
-@media  only screen and (max-width: 500px)
+@media screen and (max-width: 500px) {
 
-/*@media  only screen and (max-width: 320px) {
+	html {
+		font-size: 10px;
+	}
 
 	.flex {
-		flex-flow: column;
+		flex-direction: column;
+		align-items: center;
 	}
 
-	h2 {
-		margin-bottom: 20px;
-	}
-
-	.promo-background {
-		height: auto;
-	}
-
-	.promo-info {
-		max-width: 88%;
-		padding-top: 20px;
-		margin-bottom: 0;
+	.container {
+		width: 100%;
+		padding: 0 0 1.5rem;
 	}
 
 	.header {
-		padding: 0;
-    flex-flow: column;
-    height: 10vh;
-    margin-bottom: 1rem;
+		margin-bottom: 5vh;
 	}
 
-	.promo-info__title {
-		font-size: 20px;
+	.auth__item {
+		display: block;
 	}
 
-	.promo-info__text {
-		font-size: 18px;
-		margin-bottom: 20px;
+	.instruction__step {
+		width: 300px;
+		margin: 0 auto 1rem;
+		padding-top: 1rem;
 	}
 
-	.works_cover {
-		padding-top: 20px;
-		padding-bottom: 0;
-	}
-
-	.work {
-		margin: 0 auto;
-		width: 100%;
-		max-width: 300px;
-		max-height: 240px;
-		margin-bottom: 10px;
-		background-size: cover;
-	}
-
-	.work1 {
+	.instruction__step1 {
 		background: url(../img/step1_mobile.png) no-repeat;
 	}
-
-	.work2 {
+	
+	.instruction__step2 {
 		background: url(../img/step2_mobile.png) no-repeat;
 	}
-
-	.work3 {
+	
+	.instruction__step3 {
 		background: url(../img/step3_mobile.png) no-repeat;
 	}
 
-	.work_content {
-		margin-left: 20px;
-	}
-
-	.work_content h3 {
-		margin-bottom: 30px;
-	}
-
-	.work_content p {
-		margin-top: 0;
-	}
-
 	.partners {
-		width: 100%;
-		margin-bottom: 37px;
-	}
-
-	.partners_cover {
+		padding: 0 10%;
 		padding-bottom: 0;
-	}
-
-	li:last-child {
-		margin-bottom: 0;
-		color: red;
 	}
 
 	.partner {
-		margin: 0 auto;
 		width: 100%;
-		margin-bottom: 17px;
+		padding-bottom: 1rem;
 	}
 
-	.ideas_cover {
-		padding-top: 35px;
-		padding-bottom: 0;
+	.partner__avatar {
+		margin-bottom: 0;
+	}
+
+	.partner__about {
+		margin-bottom: 0;
 	}
 
 	.ideas {
-		align-items: center;
+		grid-template-columns: 1fr;
+	}
+
+	.idea {
+		width: 300px;
+		height: 120px;
+		margin: auto;
+	}
+
+	.idea5, .idea6 {
+		grid-column-start: 1;
+		grid-column-end: 2;
 	}
 
 	.idea1 {
 		background: url(../img/idea1_mobile.png) no-repeat;
 	}
-
+	
 	.idea2 {
 		background: url(../img/idea2_mobile.png) no-repeat;
 	}
-
+	
 	.idea3 {
-		background: url(../img/idea3_mobile.png)  no-repeat;
+		background: url(../img/idea3_mobile.png) no-repeat;
 	}
-
+	
 	.idea4 {
 		background: url(../img/idea4_mobile.png) no-repeat;
 	}
-
+	
 	.idea5 {
 		background: url(../img/idea5_mobile.png) no-repeat;
 	}
-
+	
 	.idea6 {
 		background: url(../img/idea6_mobile.png) no-repeat;
 	}
-
+	
 	.idea7 {
 		background: url(../img/idea7_mobile.png) no-repeat;
 	}
 
-
-	.ideas div {
-		max-width: 300px;
-		width: 100%;
-		max-height: 120px;
-	}
-
-	.ideas .title {
-		width: 100%;
-	}
-
-	.idea5,
-	.idea6 {
-		margin-bottom: 20px;
-	}
-
-	.create_cover {
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
-
-	.create h2 {
-		max-width: 70%;
-		margin: 0 auto;
-		margin-bottom: 15px;
-	}
-
-	.create .text {
-		margin-bottom: 15px;
+	.create-cover {
+		margin-bottom: 1rem;
 	}
 
 	.form {
-		flex-flow: column;
-		justify-content: center;
-		max-width: 280px;
+		width: 90%;
 	}
 
-	.form input,
-	.form button {
-		height: 40px;
+	.form__text, .form__btn {
 		width: 100%;
 	}
 
-	.form input {
-		margin-bottom: 10px;
-	}
-
-	.footer {
-		padding-top: 20px;
-		padding-bottom: 20px;
-	}
-
-	.footer .logo {
-		margin-bottom: 15px;
-	}
-
-	.footer .nav {
+	.nav {
 		text-align: center;
 	}
 
-	.footer .nav {
-		max-width: 200px;
-		margin: 0 auto;
-		margin-bottom: 15px;
-	}
-
-	.nav_links li {
+	.nav__links li {
 		display: inline-block;
+		margin: 0.5rem;
 	}
 
-	.partners_link {
-		margin-bottom: 15px;
-	}
-
-	.footer .design {
-		text-align: center; 
-	}
-
-	.design_logo {
-		margin: 0 auto;
-	}
-
-
-}	
-
-/* Проверить все стили на БЭМ в файле стилей - стили позиционирования отдельно от оформления */
+}
