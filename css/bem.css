@@ -160,7 +160,8 @@ input {
 }
 
 .auth__btn {
-  font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
+	font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
+	margin-left: 1rem;
 }
 
 /* styles for promo-info block */
@@ -519,6 +520,26 @@ input {
 	}
 }
 
+@media screen and (max-width: 600px) {
+	.instruction__step {
+		width: 300px;
+		margin: 0 auto 1rem;
+		padding-top: 1rem;
+	}
+
+	.instruction__step1 {
+		background: url(../img/step1_mobile.png) no-repeat;
+	}
+	
+	.instruction__step2 {
+		background: url(../img/step2_mobile.png) no-repeat;
+	}
+	
+	.instruction__step3 {
+		background: url(../img/step3_mobile.png) no-repeat;
+	}
+}
+
 @media screen and (max-width: 500px) {
 
 	html {
@@ -543,32 +564,23 @@ input {
 		display: block;
 	}
 
-	.instruction__step {
-		width: 300px;
-		margin: 0 auto 1rem;
-		padding-top: 1rem;
-	}
-
-	.instruction__step1 {
-		background: url(../img/step1_mobile.png) no-repeat;
-	}
-	
-	.instruction__step2 {
-		background: url(../img/step2_mobile.png) no-repeat;
-	}
-	
-	.instruction__step3 {
-		background: url(../img/step3_mobile.png) no-repeat;
-	}
-
 	.partners {
 		padding: 0 10%;
 		padding-bottom: 0;
 	}
 
 	.partner {
+		display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 20px 1fr;
+    grid-gap: 1rem;
 		width: 100%;
-		padding-bottom: 1rem;
+		padding: 1rem;
+	}
+
+	.partner a {
+		grid-row-start: 1;
+    grid-row-end: 3;
 	}
 
 	.partner__avatar {
