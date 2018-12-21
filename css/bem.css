@@ -528,15 +528,18 @@ input {
 	}
 
 	.instruction__step1 {
-		background: url(../img/step1_mobile.png) no-repeat;
+		background: rgb(0, 0, 0) url(../img/step1_mobile.png) no-repeat;
+		background-blend-mode: hard-light;
 	}
 	
 	.instruction__step2 {
-		background: url(../img/step2_mobile.png) no-repeat;
+		background: rgb(0, 0, 0) url(../img/step2_mobile.png) no-repeat;
+		background-blend-mode: hard-light;
 	}
 	
 	.instruction__step3 {
-		background: url(../img/step3_mobile.png) no-repeat;
+		background: rgb(0, 0, 0) url(../img/step3_mobile.png) no-repeat;
+		background-blend-mode: hard-light;
 	}
 }
 
