@@ -645,17 +645,30 @@ input {
 		width: 90%;
 	}
 
+	.form__text {
+		margin-bottom: 10%;
+	}
+
 	.form__text, .form__btn {
 		width: 100%;
 	}
 
+	.footer__logo {
+		margin-bottom: 5%;
+	}
+
 	.nav {
 		text-align: center;
+		margin-bottom: 5%;
 	}
 
 	.nav__links li {
 		display: inline-block;
 		margin: 0.5rem;
+	}
+
+	.footer__partners {
+		margin-bottom: 5%;
 	}
 
 }
