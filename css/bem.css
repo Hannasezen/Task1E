@@ -57,7 +57,7 @@ input {
 
 .wrapper {
   text-align: center;
-	min-width: 320px;
+	min-width: 300px;
   color: #fff;
   font-family: 'RobotoLight', Helvetica, Arial, sans-serif;
 }
@@ -145,7 +145,6 @@ input {
 	background-position: center top;
 	max-width: 1440px;
 	margin: 0 auto;
-	height: 100vh;
 }
 
 /* styles for header block */
@@ -301,10 +300,7 @@ input {
 /* Ideas section */
 
 .ideas {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-row-gap: 1em;
-	grid-column-gap: 1em;
+	justify-content: space-between;
 	color: #fff;
 	max-width: 940px;
 }
@@ -357,16 +353,27 @@ input {
 	background-color: rgb(228, 218, 218);
 	background-repeat: no-repeat;
 	border-radius: 4px;
+	margin: 1%;
 }
 
-.idea5 {
-	grid-column-start: 2;
-	grid-column-end: 4;
+.idea1,
+.idea2,
+.idea3,
+.idea4,
+.idea7 {
+	height: 310px;
+	max-width: 300px;
+	flex-grow: 1;
+	flex-basis: 31%;
+	margin-bottom: 20px;
 }
 
+.idea5,
 .idea6 {
-	grid-column-start: 1;
-	grid-column-end: 3;
+	height: 310px;
+	max-width: 620px;
+	flex-grow: 2;
+	flex-basis: 65%;
 }
 
 .idea__title {
@@ -475,6 +482,12 @@ input {
 	max-width: 110px;
 }
 
+@media screen and (min-width: 1024px) {
+	.promo-background {
+		height: 100vh;
+	}
+}
+
 @media screen and (max-width: 768px) {
 
 	.promo-background {
@@ -498,6 +511,23 @@ input {
 	.partner {
 		width: 50%;
 		margin-bottom: 1rem;
+	}
+
+	.ideas {
+		justify-content: center;
+	}
+
+	.idea1,
+	.idea2,
+	.idea3,
+	.idea4,
+	.idea6,
+	.idea7 {
+		flex: 1 0 48%;
+	}
+
+	.idea5 {
+		flex: 1 0 98%;
 	}
 
 	.idea__title {
@@ -556,6 +586,10 @@ input {
 		font-size: 10px;
 	}
 
+	a {
+		display: block;
+	}
+
 	.flex {
 		flex-direction: column;
 		align-items: center;
@@ -579,18 +613,9 @@ input {
 		padding-bottom: 0;
 	}
 
-	.partner {
-		display: grid;
-    grid-template-columns: 120px 1fr;
-    grid-template-rows: 20px 1fr;
-    grid-gap: 1rem;
+	.partner {		
 		width: 100%;
 		padding: 1rem;
-	}
-
-	.partner a {
-		grid-row-start: 1;
-    grid-row-end: 3;
 	}
 
 	.partner__avatar {
@@ -602,18 +627,16 @@ input {
 	}
 
 	.ideas {
-		grid-template-columns: 1fr;
+		display: block;
+		width: 100%;
 	}
 
 	.idea {
-		width: 300px;
+		max-width: 300px;
+		width: 100%;
 		height: 120px;
 		margin: auto;
-	}
-
-	.idea5, .idea6 {
-		grid-column-start: 1;
-		grid-column-end: 2;
+		margin-bottom: 1rem;
 	}
 
 	.idea1 {
