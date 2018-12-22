@@ -530,6 +530,10 @@ input {
 		flex: 1 0 98%;
 	}
 
+	.idea6 {
+		max-width: 300px;
+	}
+
 	.idea__title {
 		height: 100%;
 		padding-top: 20%;
@@ -575,6 +579,11 @@ input {
 		background-blend-mode: hard-light;
 	}
 
+	.nav__links {
+		width: 50%;
+		margin: auto;
+	}
+
 	.design {
 		margin: 0 auto;
 	}
@@ -597,7 +606,7 @@ input {
 
 	.container {
 		width: 100%;
-		padding: 0 0 1.5rem;
+		padding: 0 1rem 1.5rem;
 	}
 
 	.header {
